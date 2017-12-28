@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { setSearchTerm } from './actionCreators';
 import Header from './Header';
 
 class Landing extends Component {
     constructor(props) {
         super(props);
         this.searchHandler = this.searchHandler.bind(this);
+        this.handleSearchTermChange = this.props.handleSearchTermChange;
     }
 
     /**
@@ -37,11 +40,23 @@ class Landing extends Component {
         return (
             <div className='landing'>
                 <Header />
-                <input type='text' onKeyDown={this.searchHandler} placeholder='Search and Press Enter' />
+                <input value={this.props.searchTerm} onChange={this.handleSearchTermChange} type='text' onKeyDown={this.searchHandler} placeholder='Search and Press Enter' />
                 <Link to='/search'>or Browse All</Link>
             </div>
         );
     }
 }
 
-export default Landing;
+const mapStateToProps = (state) => {
+    return { searchTerm: state.searchTerm };
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return({
+        handleSearchTermChange(event) {
+            dispatch(setSearchTerm(event.target.value));
+        }
+    });
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Landing);

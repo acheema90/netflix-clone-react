@@ -5,8 +5,8 @@ const DEFAULT_STATE = {
 };
 
 const setSearchTerm = (state, action) => {
-    // must retun new state
-    // so we return a new obejct with old state and the new searchTerm
+    // must return new state
+    // so we return a new object with old state and the new searchTerm
     return Object.assign({}, state, {searchTerm: action.payload });
 };
 
