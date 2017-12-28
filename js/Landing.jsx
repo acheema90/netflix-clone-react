@@ -40,7 +40,12 @@ class Landing extends Component {
         return (
             <div className='landing'>
                 <Header />
-                <input value={this.props.searchTerm} onChange={this.handleSearchTermChange} type='text' onKeyDown={this.searchHandler} placeholder='Search and Press Enter' />
+                <input
+                    value={this.props.searchTerm}
+                    onChange={this.handleSearchTermChange}
+                    type='text' onKeyDown={this.searchHandler}
+                    placeholder='Search and Press Enter'
+                />
                 <Link to='/search'>or Browse All</Link>
             </div>
         );

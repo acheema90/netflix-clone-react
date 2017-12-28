@@ -17,7 +17,8 @@ class Search extends Component {
             <div className='search'>
                 <Header
                     showSearch={true}
-                    searchTerm={this.props.searchTerm} onChangeHandler={this.handleSearchTermChange}
+                    searchTerm={this.props.searchTerm}
+                    onChangeHandler={this.handleSearchTermChange}
                 />
                 <div>
                     {this.props.shows
