@@ -29,7 +29,7 @@ class Landing extends Component {
                 .map((arr) => arr.imdbID);
             // navigation logic
             if (arrs[0] !== undefined) {
-                window.location.href = `/details/${arrs[0]}`;
+                this.props.history.push('/search', {searchTerm: arrs[0]});
             } else {
                 event.target.value = 'No Results! Try Again!';
             }

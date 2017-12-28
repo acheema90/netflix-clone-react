@@ -8,7 +8,7 @@ const Header = (props) => {
             <input
                 onChange={props.onChangeHandler}
                 value={props.searchTerm}
-                type="text" placeholder="Search"
+                type="text" placeholder={props.searchTerm ? props.searchTerm : 'Search'}
             />
         );
     } else {
