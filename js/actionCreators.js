@@ -18,7 +18,7 @@ export function addApiData(apiData) {
 export function getAPIDetails(imdbID) {
     return (dispatch) => {
         axios
-            .get(`http:localhost:3000/${imdbID}`)
+            .get(`http://localhost:3000/${imdbID}`)
             .then(response => {
                 dispatch(addApiData(response.data));
             })
