@@ -46,4 +46,5 @@ const mapDispatchToProps = (dispatch) => {
     });
 };
 
+export const Unwrapped = Search;
 export default connect(mapStateToProps, mapDispatchToProps)(Search);

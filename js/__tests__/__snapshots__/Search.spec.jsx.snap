@@ -4,17 +4,10 @@ exports[`Search renders correctly 1`] = `
 <div
   className="search"
 >
-  <header>
-    <h1>
-      svideo
-    </h1>
-    <input
-      onChange={[Function]}
-      placeholder="Search"
-      type="text"
-      value=""
-    />
-  </header>
+  <Header
+    searchTerm=""
+    showSearch={true}
+  />
   <div>
     <ShowCard
       show={
@@ -23,7 +16,7 @@ exports[`Search renders correctly 1`] = `
           "imdbID": "tt4288182",
           "poster": "a.jpg",
           "title": "Atlanta",
-          "trailer": "MpEdJ-mmTlY",
+          "trailer": "https://www.youtube-nocookie.com/embed/MpEdJ-mmTlY?rel=0&amp;control=0&amp;showinfo=0",
           "year": "2008–2013",
         }
       }
@@ -35,7 +28,7 @@ exports[`Search renders correctly 1`] = `
           "imdbID": "tt4270492",
           "poster": "b.jpg",
           "title": "Billions",
-          "trailer": "_raEUMLL-ZI",
+          "trailer": "https://www.youtube-nocookie.com/embed/_raEUMLL-ZI?rel=0&amp;control=0&amp;showinfo=0",
           "year": "2016–",
         }
       }
@@ -47,7 +40,7 @@ exports[`Search renders correctly 1`] = `
           "imdbID": "tt2085059",
           "poster": "bm.jpg",
           "title": "Black Mirror",
-          "trailer": "jDiYGjp5iFg",
+          "trailer": "https://www.youtube-nocookie.com/embed/jDiYGjp5iFg?rel=0&amp;control=0&amp;showinfo=0",
           "year": "2011–",
         }
       }
@@ -59,7 +52,7 @@ exports[`Search renders correctly 1`] = `
           "imdbID": "tt0903747",
           "poster": "bb.jpg",
           "title": "Breaking Bad",
-          "trailer": "XZ8daibM3AE",
+          "trailer": "https://www.youtube-nocookie.com/embed/XZ8daibM3AE?rel=0&amp;control=0&amp;showinfo=0",
           "year": "2008–2013",
         }
       }
@@ -71,7 +64,7 @@ exports[`Search renders correctly 1`] = `
           "imdbID": "tt0944947",
           "poster": "got.jpg",
           "title": "Game of Thrones",
-          "trailer": "giYeaKsXnsI",
+          "trailer": "https://www.youtube-nocookie.com/embed/giYeaKsXnsI?rel=0&amp;control=0&amp;showinfo=0",
           "year": "2011–",
         }
       }
@@ -83,7 +76,7 @@ exports[`Search renders correctly 1`] = `
           "imdbID": "tt1796960",
           "poster": "h.jpg",
           "title": "Homeland",
-          "trailer": "KyFmS3wRPCQ",
+          "trailer": "https://www.youtube-nocookie.com/embed/KyFmS3wRPCQ?rel=0&amp;control=0&amp;showinfo=0",
           "year": "2011–",
         }
       }
@@ -95,7 +88,7 @@ exports[`Search renders correctly 1`] = `
           "imdbID": "tt1856010",
           "poster": "hoc.jpg",
           "title": "House of Cards",
-          "trailer": "NTzycsqxYJ0",
+          "trailer": "https://www.youtube-nocookie.com/embed/NTzycsqxYJ0?rel=0&amp;control=0&amp;showinfo=0",
           "year": "2013–",
         }
       }
@@ -107,7 +100,7 @@ exports[`Search renders correctly 1`] = `
           "imdbID": "tt4635276",
           "poster": "mon.jpg",
           "title": "Master of None",
-          "trailer": "6bFvb3WKISk",
+          "trailer": "https://www.youtube-nocookie.com/embed/6bFvb3WKISk?rel=0&amp;control=0&amp;showinfo=0",
           "year": "2015–",
         }
       }
@@ -119,7 +112,7 @@ exports[`Search renders correctly 1`] = `
           "imdbID": "tt2707408",
           "poster": "n.jpg",
           "title": "Narcos",
-          "trailer": "U7elNhHwgBU",
+          "trailer": "https://www.youtube-nocookie.com/embed/U7elNhHwgBU?rel=0&amp;control=0&amp;showinfo=0",
           "year": "2015–",
         }
       }
@@ -131,7 +124,7 @@ exports[`Search renders correctly 1`] = `
           "imdbID": "tt2372162",
           "poster": "oitnb.jpg",
           "title": "Orange Is the New Black",
-          "trailer": "th8WT_pxGqg",
+          "trailer": "https://www.youtube-nocookie.com/embed/th8WT_pxGqg?rel=0&amp;control=0&amp;showinfo=0",
           "year": "2013–",
         }
       }
@@ -143,7 +136,7 @@ exports[`Search renders correctly 1`] = `
           "imdbID": "tt2575988",
           "poster": "sv.jpg",
           "title": "Silicon Valley",
-          "trailer": "69V__a49xtw",
+          "trailer": "https://www.youtube-nocookie.com/embed/69V__a49xtw?rel=0&amp;control=0&amp;showinfo=0",
           "year": "2014–",
         }
       }
@@ -155,7 +148,7 @@ exports[`Search renders correctly 1`] = `
           "imdbID": "tt4574334",
           "poster": "st.jpg",
           "title": "Stranger Things",
-          "trailer": "9Egf5U8xLo8",
+          "trailer": "https://www.youtube-nocookie.com/embed/9Egf5U8xLo8?rel=0&amp;control=0&amp;showinfo=0",
           "year": "2016–",
         }
       }
@@ -167,7 +160,7 @@ exports[`Search renders correctly 1`] = `
           "imdbID": "tt2149175",
           "poster": "ta.jpg",
           "title": "The Americans",
-          "trailer": "HjuUkbhsI24",
+          "trailer": "https://www.youtube-nocookie.com/embed/HjuUkbhsI24?rel=0&amp;control=0&amp;showinfo=0",
           "year": "2013–",
         }
       }
@@ -179,7 +172,7 @@ exports[`Search renders correctly 1`] = `
           "imdbID": "tt1759761",
           "poster": "v.jpg",
           "title": "Veep",
-          "trailer": "I2HoCG_iyhU",
+          "trailer": "https://www.youtube-nocookie.com/embed/I2HoCG_iyhU?rel=0&amp;control=0&amp;showinfo=0",
           "year": "2012–",
         }
       }
@@ -191,7 +184,7 @@ exports[`Search renders correctly 1`] = `
           "imdbID": "tt0475784",
           "poster": "ww.jpg",
           "title": "Westworld",
-          "trailer": "eX3u0IlBBO4",
+          "trailer": "https://www.youtube-nocookie.com/embed/eX3u0IlBBO4?rel=0&amp;control=0&amp;showinfo=0",
           "year": "2016–",
         }
       }
